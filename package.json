@@ -4,7 +4,7 @@
 	"main": "src/webpack.config.react.js",
 	"scripts": {
 		"format": "prettier --write **/*.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Warning: this package comes without tests\" && exit 0"
 	},
 	"repository": {
 		"type": "git",
