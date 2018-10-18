@@ -1,5 +1,1 @@
-module.exports = {
-	singleQuote: false,
-	trailingComma: "all",
-	useTabs: true,
-};
+module.exports = require("@omgjs/prettier-config-react");

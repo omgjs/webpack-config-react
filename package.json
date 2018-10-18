@@ -38,6 +38,12 @@
 			"git add"
 		]
 	},
+	"eslintConfig": {
+		"extends": "@omgjs/eslint-config-react"
+	},
+	"babel": {
+		"extends": "@omgjs/babel-config-react"
+	},
 	"dependencies": {
 		"lodash": "4.17.11",
 		"npm-check-updates": "^2.14.2",
@@ -49,7 +55,26 @@
 	"resolutions": {
 		"babel-core": "7.0.0-bridge.0"
 	},
+	"peerDependencies": {
+		"browserslist": "4.1.1",
+		"clean-webpack-plugin": "0.1.19",
+		"connect-history-api-fallback": "1.5.0",
+		"cross-env": "5.2.0",
+		"file-loader": "2.0.0",
+		"html-webpack-plugin": "3.2.0",
+		"pretty-quick": "1.7.0",
+		"node-sass": "4.9.3",
+		"sass-loader": "7.1.0",
+		"style-loader": "0.23.0",
+		"webpack": "4.20.2",
+		"webpack-cli": "3.1.1",
+		"webpack-merge": "4.1.4",
+		"webpack-serve": "2.0.2"
+	},
 	"devDependencies": {
+		"@omgjs/eslint-config-react": "x",
+		"@omgjs/babel-config-react": "x",
+		"@omgjs/prettier-config-react": "x",
 		"@babel/core": "7.1.0",
 		"@babel/plugin-proposal-class-properties": "7.1.0",
 		"@babel/plugin-proposal-decorators": "7.1.0",
