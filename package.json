@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/omgjs/webpack-react-config.git"
+		"url": "git+https://github.com/omgjs/webpack-config-react.git"
 	},
 	"keywords": [
 		"webpack",
@@ -19,9 +19,9 @@
 	"author": "Artem Korolev",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/omgjs/webpack-react-config/issues"
+		"url": "https://github.com/omgjs/webpack-config-react/issues"
 	},
-	"homepage": "https://github.com/omgjs/webpack-react-config#readme",
+	"homepage": "https://github.com/omgjs/webpack-config-react#readme",
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
