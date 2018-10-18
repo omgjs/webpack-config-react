@@ -1,6 +1,10 @@
 {
 	"name": "@omgjs/webpack-config-react",
 	"description": "allows to keep webpack react config in node module, so its easier to update its dependencies and less boilerplate code in project",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "src/webpack.config.react.js",
 	"scripts": {
 		"format": "prettier --write **/*.js",
