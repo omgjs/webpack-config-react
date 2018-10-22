@@ -8,5 +8,5 @@ module.exports = {
 	imagesFolder: "assets/images",
 	fontsFolder: "assets/fonts",
 	cssFolder: "assets/css",
-	jsFolder: "",
+	jsFolder: ".",
 };
