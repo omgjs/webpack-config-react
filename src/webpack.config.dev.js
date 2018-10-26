@@ -12,6 +12,11 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(js|jsx|ts)$/,
+				use: ["source-map-loader"],
+				enforce: "pre",
+			},
+			{
 				test: /\.(css|scss)$/,
 				use: [
 					"style-loader",
@@ -34,4 +39,5 @@ module.exports = {
 			template: commonPaths.templatePath,
 		}),
 	],
+	devtool: "source-map",
 };
