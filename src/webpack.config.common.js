@@ -43,6 +43,10 @@ module.exports = {
 					},
 				],
 			},
+			{
+				test: /\.md$/,
+				loader: ["babel-loader", "@hugmanrique/react-markdown-loader"],
+			},
 		],
 	},
 	serve: {

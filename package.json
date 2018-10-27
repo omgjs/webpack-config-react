@@ -56,10 +56,12 @@
 		"babel-core": "7.0.0-bridge.0"
 	},
 	"peerDependencies": {
+		"@hugmanrique/react-markdown-loader": "^0.0.2",
 		"browserslist": "4.1.1",
 		"clean-webpack-plugin": "0.1.19",
 		"connect-history-api-fallback": "1.5.0",
 		"cross-env": "5.2.0",
+		"duplicate-package-checker-webpack-plugin": "^3.0.0",
 		"file-loader": "2.0.0",
 		"html-webpack-plugin": "3.2.0",
 		"pretty-quick": "1.7.0",
@@ -92,6 +94,7 @@
 		"@babel/preset-react": "7.0.0",
 		"@babel/register": "7.0.0",
 		"@babel/runtime": "7.0.0",
+		"@hugmanrique/react-markdown-loader": "^0.0.2",
 		"babel-core": "7.0.0-beta.3",
 		"babel-eslint": "10.0.0",
 		"babel-jest": "23.6.0",
@@ -102,6 +105,7 @@
 		"connect-history-api-fallback": "1.5.0",
 		"cross-env": "5.2.0",
 		"css-loader": "1.0.0",
+		"duplicate-package-checker-webpack-plugin": "^3.0.0",
 		"enzyme": "3.6.0",
 		"enzyme-adapter-react-16": "1.5.0",
 		"eslint": "5.6.0",
