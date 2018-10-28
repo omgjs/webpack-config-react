@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 const commonPaths = require("./paths");
 
 module.exports = {
@@ -38,6 +39,12 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: commonPaths.templatePath,
 		}),
+		new webpack.HotModuleReplacementPlugin(),
 	],
 	devtool: "source-map",
+	devServer: {
+		compress: true,
+		historyApiFallback: true,
+		hot: true,
+	},
 };

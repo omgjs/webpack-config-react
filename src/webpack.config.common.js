@@ -1,6 +1,8 @@
 const webpack = require("webpack");
 const convert = require("koa-connect");
 const history = require("connect-history-api-fallback");
+const highlight = require("rehype-highlight");
+const emoji = require("remark-emoji");
 const commonPaths = require("./paths");
 
 module.exports = {
@@ -45,7 +47,18 @@ module.exports = {
 			},
 			{
 				test: /\.md$/,
-				loader: ["babel-loader", "@hugmanrique/react-markdown-loader"],
+				use: [
+					{
+						loader: "babel-loader",
+					},
+					{
+						loader: "@hugmanrique/react-markdown-loader",
+						options: {
+							rehypePlugins: [highlight],
+							remarkPlugins: [emoji],
+						},
+					},
+				],
 			},
 		],
 	},
