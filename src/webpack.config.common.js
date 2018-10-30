@@ -3,6 +3,7 @@ const convert = require("koa-connect");
 const history = require("connect-history-api-fallback");
 const highlight = require("rehype-highlight");
 const emoji = require("remark-emoji");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const commonPaths = require("./paths");
 
 module.exports = {
@@ -76,5 +77,8 @@ module.exports = {
 		modules: [".", "node_modules"],
 		extensions: ["*", ".js", ".jsx", ".css", ".scss"],
 	},
-	plugins: [new webpack.ProgressPlugin()],
+	plugins: [
+		new webpack.ProgressPlugin(),
+		new FaviconsWebpackPlugin(commonPaths.faviconPath),
+	],
 };
