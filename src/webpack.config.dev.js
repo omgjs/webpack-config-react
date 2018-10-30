@@ -42,9 +42,4 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 	],
 	devtool: "source-map",
-	devServer: {
-		compress: true,
-		historyApiFallback: true,
-		hot: true,
-	},
 };
