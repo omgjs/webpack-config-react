@@ -4,6 +4,7 @@ const history = require("connect-history-api-fallback");
 const highlight = require("rehype-highlight");
 const emoji = require("remark-emoji");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const fs = require("fs");
 const commonPaths = require("./paths");
 
 module.exports = {
@@ -79,6 +80,8 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.ProgressPlugin(),
-		new FaviconsWebpackPlugin(commonPaths.faviconPath),
-	],
+		fs.existsSync(commonPaths.faviconPath)
+			? new FaviconsWebpackPlugin(commonPaths.faviconPath)
+			: null,
+	].filter(e => e),
 };
